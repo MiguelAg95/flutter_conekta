@@ -7,7 +7,7 @@
 //
 
 #import "Conekta.h"
-
+@import WebKit;
 
 @implementation Conekta
 
