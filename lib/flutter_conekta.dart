@@ -12,13 +12,13 @@ class FlutterConekta {
   ///
   /// Errors:
   ///   • `ERROR_UNABLE_TO_TOKENIZE` - Indicates that the token could not be created.
-  static Future<String> tokenizeCard({
-    @required String publicKey,
-    @required String cardholderName,
-    @required String cardNumber,
-    @required String cvv,
-    @required String expiryMonth,
-    @required String expiryYear,
+  static Future<String?> tokenizeCard({
+    required String publicKey,
+    required String cardholderName,
+    required String cardNumber,
+    required String cvv,
+    required String expiryMonth,
+    required String expiryYear,
   }) {
     return _channel.invokeMethod('tokenizeCard', <String, String>{
       'publicKey': publicKey,
